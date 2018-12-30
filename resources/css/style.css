@@ -1,0 +1,28 @@
+
+/* General Selector */
+* {
+  font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar Start */
+
+nav {
+  width: 960px;
+  display: flex;
+  margin: 0 auto;
+
+}
+
+.logoDiv {
+  display: inline-flex;
+  margin: 12px 24px;
+}
+
+nav ul {
+  display: inline-flex;
+
+}
+
+nav ul li {
+  
+}
