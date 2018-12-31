@@ -1,28 +1,161 @@
 
-/* General Selector */
-* {
-  font-family: Arial, sans-serif;
+/* General Selectors */
+html {
+  font-size: 16px;
+  font-family: Helvetica, sans-serif;
 }
 
-/* Navigation Bar Start */
 
+/* Navigation Bar  */
 nav {
-  width: 960px;
   display: flex;
+  height: 4rem;
+  width: 1200px;
   margin: 0 auto;
-
 }
 
-.logoDiv {
+/* Logo Div, Navigation Bar left side */
+.logoDivNav {
   display: inline-flex;
-  margin: 12px 24px;
+  align-items: center;
+  margin: 1.5rem 0.5rem;
+  font-size: 1.4rem;
 }
+
+#grayLogoPart {
+  color: rgb(199, 199, 199);
+}
+
+/* Navigation Menu, Navigation Bar right side */
 
 nav ul {
   display: inline-flex;
-
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1;
+  margin: auto 1rem;
 }
 
 nav ul li {
-  
+  margin: auto 0.5rem;
+}
+
+/* Navigation Bar End */
+
+
+
+/* Content Section One class 'learnSomething' */
+
+.learnSomething {
+  width: 1200px;
+  margin: 0 auto;
+  background-color: rgb(216, 216, 216);
+  display: flex;
+}
+
+.learnSomething img {
+  width: 60%;
+  margin: 2rem 1.5rem;
+  height: 27rem; /* possible to fix?  */
+}
+
+.learnSomethingText {
+  margin: auto 1.5rem;
+}
+
+.learnSomethingText h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.5rem auto;
+}
+
+.learnSomethingText p {
+  margin: 1.5rem auto;
+  line-height: 1.4;
+}
+
+#startButton {
+  background-color: rgb(74, 74, 74);
+  color: white;
+  padding: 0.5rem 1rem;
+  text-align: center;
+}
+
+/* Content Section One End */
+
+
+/* Content Section Two class 'keepPracticing'  */
+
+.practicingEvents {
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.keepPracticing {
+  width: 60%;
+  border-right: 1px solid gray;
+}
+
+.keepPracticing img {
+  width: 95%;
+  margin: 2rem 1.5rem;
+}
+
+.keepPracticingText {
+  margin: 0 1.5rem;
+}
+
+.keepPracticingText h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+
+}
+
+#quotes {
+  margin: 2rem auto;
+  font-size: 0.75rem;
+}
+
+/* Upcoming Events Section class 'events' */
+
+.events {
+  width: 40%;
+  margin: 1rem auto;
+}
+
+.eventItem {
+  display: flex;
+  border-bottom: 2px solid lightgray;
+  padding: 1rem 0;
+}
+
+.eventItem img {
+  width: 35%;
+  height: 9rem;
+  margin: 0 1rem;
+}
+
+.eventItemText {
+  margin: auto 1rem;
+  width: 65%;
+}
+
+.eventItemText h4 {
+  font-weight: bold;
+}
+
+.eventItemText p {
+  margin: 0.5rem auto;
+  font-size: 0.75rem;
+}
+
+.eventItemText a {
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+#backgroundGray {
+  background-color: lightgray;
 }
