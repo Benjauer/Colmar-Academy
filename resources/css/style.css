@@ -40,6 +40,22 @@ nav ul li {
   margin: auto 0.5rem;
 }
 
+
+/* Media Query Mobile Phone Screen */
+
+@media only screen and (max-width: 890px) {
+  nav {
+    width: 100%;
+  }
+
+  #grayLogoPart,
+  #blackLogoPart {
+    display: none;
+  }
+
+}
+
+
 /* Navigation Bar End */
 
 
@@ -228,22 +244,69 @@ nav ul li {
 .exhibit {
   width: 1200px;
   margin: 0 auto;
-  
+  border-bottom: 1px solid light
+}
+
+.exhibitRight {
+  flex-direction: column;
+  margin: 0 auto 0 1.5rem;
+}
+
+.exhibitRightAndLeft {
+  display: flex;
+  width: 1200px;
+  border-bottom: 1px solid lightgray;
+  padding-bottom: 2rem;
 }
 
 .exhibit h3 {
-  text-align: center;
+  display: block;
 }
 
 .videoDiv {
   width: 60%;
+
 }
 
-.videoDiv h3 {
+.videoDiv h4 {
   font-size: 1.5rem;
   margin: 1.5rem 0 0.5rem 0;
+
 }
 
 .exhibitRight {
   width: 40%;
 }
+
+#noBorder {
+  border: none;
+}
+
+
+/* Footer Section  */
+
+footer {
+  width: 1200px;
+  margin: 1rem auto;
+  display: flex;
+}
+
+footer p {
+  font-size: 0.75rem;
+}
+
+.footerLinks {
+  display: inline-flex;
+  justify-content: flex-end;
+  flex: 1;
+}
+
+.footerLinks a {
+  color: black;
+  font-size: 0.75rem;
+  text-decoration: none;
+  margin: 0.5rem;
+}
+
+
+
