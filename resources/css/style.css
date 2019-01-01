@@ -166,6 +166,8 @@ nav ul li {
 
 .startLearning {
   background-color: rgb(234, 235, 236);
+  width: 1200px;
+  margin: 0 auto;
 }
 
 .sectionTitle {
@@ -219,4 +221,29 @@ nav ul li {
   font-size: 0.75rem;
   margin: 0.5rem 0;
   line-height: 1.5;
+}
+
+/* Section Thesis exhibit class 'exhibit' */
+
+.exhibit {
+  width: 1200px;
+  margin: 0 auto;
+  
+}
+
+.exhibit h3 {
+  text-align: center;
+}
+
+.videoDiv {
+  width: 60%;
+}
+
+.videoDiv h3 {
+  font-size: 1.5rem;
+  margin: 1.5rem 0 0.5rem 0;
+}
+
+.exhibitRight {
+  width: 40%;
 }
