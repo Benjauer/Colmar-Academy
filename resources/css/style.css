@@ -28,7 +28,8 @@ nav {
 
 /* Navigation Menu, Navigation Bar right side */
 
-nav ul {
+.desktopNavMenu,
+.mobileNavMenu {
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
@@ -36,22 +37,38 @@ nav ul {
   margin: auto 1rem;
 }
 
-nav ul li {
+.desktopNavMenu li {
   margin: auto 0.5rem;
 }
 
+.mobileNavMenu {
+  display: none;
+}
 
-/* Media Query Mobile Phone Screen */
+
+/* Media Query Mobile Phone Screen Navigation Bar  */
 
 @media only screen and (max-width: 890px) {
   nav {
     width: 100%;
   }
 
-  #grayLogoPart,
-  #blackLogoPart {
+
+  .desktopNavMenu {
     display: none;
   }
+
+  .logoDivNav {
+    display: none;
+  }
+
+  .mobileNavMenu {
+    display: inline-flex;
+    justify-content: space-between;
+    flex: 1;
+    width: 100%;
+  }
+
 
 }
 
@@ -65,7 +82,7 @@ nav ul li {
 .learnSomething {
   width: 1200px;
   margin: 0 auto;
-  background-color: rgb(216, 216, 216);
+  background-color: rgb(219, 219, 219);
   display: flex;
 }
 
@@ -96,6 +113,41 @@ nav ul li {
   padding: 0.5rem 1rem;
   text-align: center;
 }
+
+/* Media Query Mobile Phone Screen Content Section One  */
+
+@media only screen and (max-width: 890px) {
+
+  .learnSomething {
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+  }
+
+  .learnSomething img {
+    width: 99%;
+    margin: 0 auto;
+  }
+
+  .learnSomethingText {
+    line-height: 1.4;
+    width: 100%;
+    color: rgb(74, 74, 74);
+    margin: 2rem 1rem;
+  }
+
+  .learnSomethingText h2 {
+    font-weight: 900;
+    margin: 0 auto;
+  }
+
+  #startButton {
+    margin: 1.5rem 0;
+    width: 90%;
+  }
+}
+
+
 
 /* Content Section One End */
 
@@ -134,6 +186,17 @@ nav ul li {
   font-size: 0.75rem;
 }
 
+/* Media Query Mobile Phone Screen for class 'keepPracticing' */
+
+@media only screen and (max-width: 890px) {
+  .keepPracticing {
+    display: none;
+  }
+}
+
+
+/* Keep Practicing Div End */
+
 /* Upcoming Events Section class 'events' */
 
 .events {
@@ -151,6 +214,10 @@ nav ul li {
   width: 35%;
   height: 9rem;
   margin: 0 1rem;
+}
+
+.eventMobileImg {
+  display: none;
 }
 
 .eventItemText {
@@ -174,6 +241,36 @@ nav ul li {
 
 #backgroundGray {
   background-color: lightgray;
+}
+
+
+/* Media Query Mobile Phone Screen for class 'events' */
+
+@media only screen and (max-width: 890px) {
+
+  .events {
+    width: 100%;
+  }
+
+  .eventItem {
+    flex-direction: column;
+    margin: 1rem auto;
+  }
+
+  .eventMobileImg {
+    display: block;
+  }
+
+  .eventDesktopImg {
+    display: none;
+  }
+
+
+  #backgroundGray {
+    background-color: inherit;
+  }
+
+
 }
 
 

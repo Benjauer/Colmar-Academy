@@ -16,12 +16,22 @@
     <p id="grayLogoPart">Academy</p>
   </div>
 
-  <ul> <!-- Right Side Navigation Bar  -->
+  <ul class="desktopNavMenu"> <!-- Right Side Navigation Bar Desktop class 'desktopNavMenu' -->
     <li>On campus</li>
     <li>Online</li>
     <li>For companies</li>
     <li>Sign in</li>
   </ul>
+
+  <!-- Right Side Navigation Bar Mobile class 'mobileNavMenu'  -->
+  <ul class="mobileNavMenu">
+    <li> <img src="resources/images/ic-logo.svg"> </li>
+    <li> <img src="./resources/images/ic-on-campus.svg"> </li>
+    <li> <img src="./resources/images/ic-online.svg"> </li>
+    <li> <img src="./resources/images/ic-login.svg"> </li>
+
+  </ul>
+
 </nav>
 <!-- Navigation Bar End  -->
 
@@ -58,7 +68,8 @@
 
     <!-- Event Item Div -->
     <div class="eventItem">
-      <img src="resources/images/information-orientation.jpg">
+      <img class="eventDesktopImg" src="resources/images/information-orientation.jpg">
+      <img class="eventMobileImg" src="resources/images/information-orientation-mobile.jpg">
       <div class="eventItemText">
         <h4>Orientation date</h4>
         <p>Tue 10/11 & Wed 10/12: 8am - 3pm</p>
@@ -67,7 +78,8 @@
     </div>
 
     <div class="eventItem">
-      <img src="resources/images/information-campus.jpg">
+      <img class="eventDesktopImg" src="resources/images/information-campus.jpg">
+      <img class="eventMobileImg" src="resources/images/information-campus-mobile.jpg">
       <div class="eventItemText">
         <h4>Our campus</h4>
         <p>Find which campus is close to you</p>
@@ -76,7 +88,8 @@
     </div>
 
     <div class="eventItem" id="backgroundGray">
-      <img src="resources/images/information-guest-lecture.jpg">
+      <img class="eventDesktopImg" src="resources/images/information-guest-lecture.jpg">
+      <img class="eventMobileImg" src="resources/images/information-guest-lecture-mobile.jpg">
       <div class="eventItemText">
         <h4>Our guest lecture</h4>
         <p>Join a keynote with Oliver Sack about music in medical treatment</p>
