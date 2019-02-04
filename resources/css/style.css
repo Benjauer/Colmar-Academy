@@ -48,7 +48,7 @@ nav {
 
 /* Media Query Mobile Phone Screen Navigation Bar  */
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1150px) {
   nav {
     width: 100%;
   }
@@ -116,7 +116,7 @@ nav {
 
 /* Media Query Mobile Phone Screen Content Section One  */
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1150px) {
 
   .learnSomething {
     flex-direction: column;
@@ -188,9 +188,13 @@ nav {
 
 /* Media Query Mobile Phone Screen for class 'keepPracticing' */
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1150px) {
   .keepPracticing {
     display: none;
+  }
+
+  .practicingEvents {
+    width: 100%;
   }
 }
 
@@ -246,7 +250,7 @@ nav {
 
 /* Media Query Mobile Phone Screen for class 'events' */
 
-@media only screen and (max-width: 890px) {
+@media only screen and (max-width: 1150px) {
 
   .events {
     width: 100%;
@@ -255,10 +259,22 @@ nav {
   .eventItem {
     flex-direction: column;
     margin: 1rem auto;
+    align-items: center;
   }
 
-  .eventMobileImg {
-    display: block;
+  .eventItem img {
+
+  }
+
+  .eventItem img.eventMobileImg {
+   display: block;
+    width: 90%;
+    height: auto;
+  }
+
+  .eventItemText {
+    padding: 1rem;
+    width: 90%;
   }
 
   .eventDesktopImg {
@@ -336,6 +352,39 @@ nav {
   line-height: 1.5;
 }
 
+/* Media Query Mobile Phone Screen for class 'events' */
+
+@media only screen and (max-width: 1150px) {
+  .startLearning {
+    width: 100%;
+  }
+
+  .gallery {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galleryItem {
+    width: 100%;
+  }
+
+  .galleryItemInner {
+    margin: .5rem 0 0 0;
+  }
+
+  .galleryItemInner img {
+    display: none;
+  }
+
+  .galleryItemText {
+    padding: 1rem 0 1.5rem 1rem;
+  }
+
+  .galleryItemText p {
+    display: none;
+  }
+}
+
 /* Section Thesis exhibit class 'exhibit' */
 
 .exhibit {
@@ -405,5 +454,44 @@ footer p {
   margin: 0.5rem;
 }
 
+
+/* Media Query Mobile Phone Screen for class 'exhibitLeftAndRight' and footer*/
+
+@media only screen and (max-width: 1150px) {
+  .exhibit {
+    width: 100%;
+  }
+
+  .exhibitRightAndLeft {
+    width: 100%;
+  }
+
+  .exhibitRight {
+    display: none;
+  }
+
+  .videoDiv {
+    width: 100%;
+  }
+
+  .videoDiv h4,
+  .videoDiv p {
+    display: none;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  footer p {
+    display: block;
+    margin: 0 1rem;
+  }
+
+  .footerLinks {
+    display: none;
+  }
+
+}
 
 
